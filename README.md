@@ -1,3 +1,53 @@
+
+npx create-react-app my-app
+cd my-app
+npm start
+1) component
+   this.props
+- principal of react: change data => UI change
+2) state
+- render() is only called when setState and ...
+3) event handler
+- onclick={this.handleEvent()}
+=> function is called when render is executed
+
+handleEvent(event) {} => can't get element by event.target
+=> handleEvent(event) {}
+- onclick={this.handleEvent()}
+=> function is called when render is executed
+
+There are two ways to handle event
+  a) return a new function => we can use item and event in return function
+      - onItemClicked(item) {
+        return (event) {}
+      }
+     - onClick={ this.onItemClicked(item) } 
+  
+ b)  using bind
+    - this.onChangeTextbox = this.onChangeTextbox.bind(this);
+    - onItemClicked(event) {
+              }
+    - onClick={ this.onItemClicked }  => using variable instead of calling function
+
+4) form input
+    - input text => we have to use onChange if using value
+git commit -m "#431 resolve conflic" -n
+git commit -m "#431 resolve conflic" -n
+6) props.children
+App.js
+<TodoItem>this is property children</TodoITem>
+TodoItem.js
+const { children } = this.props     -> chidren = "this is property children"
+7)router
+8) higher order components
+ higher order function
+destructoring param function({ src, width=200})
+1212３４
+====
+1) if (!empty($midsArray)) {: dư 
+2) public const UPDATED_AT = null; trong model: thêm
+3) trường hợp mid không hợp lệ thì function requestToLine return errorResponse nên chỗ log $results['body'] sẽ bị lỗi
+
 ### Life cycle
 1. Mounting: Chỉ xảy ra 1 một khi component mount
 - componentWillMount()
